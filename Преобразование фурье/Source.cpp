@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include "IntegraL.h"
 
 using namespace std;
 
@@ -26,13 +27,17 @@ void L() {
 	l[4] = sqrt(2 * alfa) * exp(-alfa * 4) * (1.0 - 8 * alfa * 4 + 12 * pow(alfa, 2) * pow(4, 2) - 16 * pow(alfa, 3) * pow(4, 3) / 3 + 2 * pow(alfa, 4) * pow(4, 4) / 3);
 }
 
+
+
+
+
 int main() {
 
 	wt();
-
+	L();
 	for (int i = 0; i < n; i++)
 	{
-		cout << w[i] << endl;
+		cout << l[i] << endl;
 	}
 	
 
